@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Mukesh Tandi</title>
+
+<meta name="description" content="Contact Mukesh Tandi for high-performance web development and server optimization projects.">
+<meta name="author" content="Mukesh Tandi">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">Mukesh<span>Tandi</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Expertise</a>
+      <a href="projects.html">Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Contact Me</h1>
+    <p>If you’re building something serious and performance matters, let’s talk.</p>
+
+    <div class="service-card" style="max-width:600px">
+      <form method="post" action="mailto:contact@mukeshtandi.com">
+        <input type="text" placeholder="Your Name" required style="width:100%;padding:12px;margin-bottom:12px">
+        <input type="email" placeholder="Your Email" required style="width:100%;padding:12px;margin-bottom:12px">
+        <textarea placeholder="Your Message" required style="width:100%;padding:12px;height:140px;margin-bottom:12px"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
