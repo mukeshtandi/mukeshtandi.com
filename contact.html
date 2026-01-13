@@ -6,7 +6,7 @@
 
 <title>Contact | Mukesh Tandi</title>
 
-<meta name="description" content="Contact Mukesh Tandi for high-performance web development and server optimization projects.">
+<meta name="description" content="Get in touch with Mukesh Tandi for high-performance web development and server optimization projects.">
 <meta name="author" content="Mukesh Tandi">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,16 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
   <div class="container nav">
-    <div class="logo">Mukesh<span>Tandi</span></div>
+<a href="index.html" class="logo">
+  Mukesh<span>Tandi</span>
+</a>
 
     <!-- Hamburger -->
     <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
 
     <nav id="mobileNav">
@@ -36,37 +37,46 @@
   </div>
 </header>
 
+<!-- CONTACT -->
 <section class="section">
-  <div class="container">
-    <h1 class="section-title">Contact Me</h1>
-    <p>If you’re building something serious and performance matters, let’s talk.</p>
+  <div class="container" style="max-width:800px">
 
-    <div class="service-card" style="max-width:600px">
-      <form method="post" action="mailto:contact@mukeshtandi.com">
-        <input type="text" placeholder="Your Name" required style="width:100%;padding:12px;margin-bottom:12px">
-        <input type="email" placeholder="Your Email" required style="width:100%;padding:12px;margin-bottom:12px">
-        <textarea placeholder="Your Message" required style="width:100%;padding:12px;height:140px;margin-bottom:12px"></textarea>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+    <h1 class="section-title">Contact</h1>
+
+    <p style="margin-bottom:25px">
+      If you’re working on a serious project where <strong>performance, scalability and long-term stability</strong>
+      matter, feel free to reach out.
+    </p>
+
+    <div class="service-card">
+      <h4>Email</h4>
+      <p style="font-size:18px">
+        <a href="mailto:contact@mukeshtandi.com" style="color:#2563eb;font-weight:500">
+          contact@mukeshtandi.com
+        </a>
+      </p>
+
+      <p style="margin-top:15px;color:#4b5563">
+        Please include a brief description of your project, expected traffic scale and timeline.
+      </p>
     </div>
 
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
 </footer>
-<script>
-const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
-
-menuToggle.addEventListener("click", () => {
-  mobileNav.classList.toggle("show");
-});
-</script>
 
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
+
+/* Mobile Menu */
+const menuToggle=document.getElementById("menuToggle");
+const mobileNav=document.getElementById("mobileNav");
+menuToggle.addEventListener("click",()=>mobileNav.classList.toggle("show"));
 </script>
+
 </body>
 </html>
