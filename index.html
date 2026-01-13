@@ -20,7 +20,15 @@
 <header class="header">
   <div class="container nav">
     <div class="logo">Mukesh<span>Tandi</span></div>
-    <nav>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="mobileNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="skills.html">Expertise</a>
@@ -113,6 +121,14 @@
     </div>
   </div>
 </section>
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
+
+menuToggle.addEventListener("click", () => {
+  mobileNav.classList.toggle("show");
+});
+</script>
 
 <!-- FOOTER -->
 <footer class="footer">
