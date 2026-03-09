@@ -36,71 +36,61 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- PERSON SCHEMA -->
+<!-- PERSON ENTITY -->
 
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "Person",
-"name": "Mukesh Tandi",
-"url": "https://mukeshtandi.com",
-"image": "https://mukeshtandi.com/mukesh_tandi.webp",
-"jobTitle": "Web Developer",
-"description": "Mukesh Tandi is an Indian web developer from Pundlota known for building high-performance websites and scalable web systems.",
-"mainEntityOfPage": {
-"@type": "WebPage",
-"@id": "https://mukeshtandi.com/"
+"@context":"https://schema.org",
+"@type":"Person",
+"@id":"https://mukeshtandi.com/#person",
+"name":"Mukesh Tandi",
+"url":"https://mukeshtandi.com",
+"image":"https://mukeshtandi.com/mukesh_tandi.webp",
+"jobTitle":"Web Developer",
+"description":"Mukesh Tandi is an Indian web developer from Pundlota specializing in high-performance websites, scalable web systems and server optimization.",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Pundlota",
+"addressCountry":"India"
 },
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "Pundlota",
-"addressCountry": "India"
+"worksFor":{
+"@type":"Organization",
+"name":"Freelance"
 },
-"sameAs": [
+"sameAs":[
 "https://github.com/mukeshtandi",
 "https://www.linkedin.com/in/mukesh-tandi-8a8a8791/",
 "https://www.instagram.com/mukesh.tandi/",
 "https://www.facebook.com/MukeshTandiOfficial/",
 "https://x.com/MukeshTandi"
 ],
-"worksFor": {
-"@type": "Organization",
-"name": "Freelance"
-},
-"knowsAbout": [
+"knowsAbout":[
 "Web Development",
 "Server Optimization",
 "High Performance Websites",
-"SEO Optimization"
+"SEO Optimization",
+"High Traffic Architecture"
 ]
 }
 </script>
-
-<!-- WEBSITE SCHEMA -->
-
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "WebSite",
-"name": "Mukesh Tandi",
-"url": "https://mukeshtandi.com",
-"description": "Official website of Mukesh Tandi, web developer from Pundlota specializing in high-performance websites and scalable web systems."
+"@context":"https://schema.org",
+"@type":"WebSite",
+"@id":"https://mukeshtandi.com/#website",
+"url":"https://mukeshtandi.com",
+"name":"Mukesh Tandi",
+"description":"Official website of Mukesh Tandi, web developer from Pundlota specializing in high-performance websites and scalable web systems.",
+"publisher":{
+"@id":"https://mukeshtandi.com/#person"
+},
+"potentialAction":{
+"@type":"SearchAction",
+"target":"https://mukeshtandi.com/search?q={search_term_string}",
+"query-input":"required name=search_term_string"
+}
 }
 </script>
-
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "BreadcrumbList",
-"itemListElement": [{
-"@type": "ListItem",
-"position": 1,
-"name": "Home",
-"item": "https://mukeshtandi.com"
-}]
-}
-</script>
-
 </head>
 
 <body>
