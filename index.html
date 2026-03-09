@@ -168,3 +168,22 @@ Welcome to the official Mukesh Tandi website. Mukesh Tandi is a web developer fr
 </div>
 
 </section>
+<footer class="footer">
+<p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
+
+menuToggle.addEventListener("click", () => {
+mobileNav.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>
