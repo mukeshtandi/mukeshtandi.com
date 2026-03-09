@@ -1,83 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blog | Mukesh Tandi</title>
+<title>Mukesh Tandi Blog | Mukesh Tandi Website</title>
 
-<meta name="description" content="Technical articles on web performance, server optimization and scalable website architecture by Mukesh Tandi.">
+<meta name="description" content="Mukesh Tandi blog about web performance, server optimization and scalable website architecture.">
+
+<meta name="keywords" content="mukesh tandi, mukesh tandi website, mukesh tandi pundlota, mukesh tandi blog, web development blog">
+
 <meta name="author" content="Mukesh Tandi">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mukeshtandi.com/blog.html">
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="Mukesh Tandi Blog">
+<meta property="og:description" content="Technical blog by Mukesh Tandi about web development and performance engineering.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mukeshtandi.com/blog.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/mukeshtandi/mukeshtandi.com/mukesh_tandi.webp">
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mukesh Tandi Blog">
+<meta name="twitter:description" content="Insights on performance engineering and scalable website systems.">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/mukeshtandi/mukeshtandi.com/mukesh_tandi.webp">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- BLOG SCHEMA -->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Blog",
+ "name": "Mukesh Tandi Blog",
+ "url": "https://mukeshtandi.com/blog.html",
+ "author": {
+ "@type": "Person",
+ "name": "Mukesh Tandi"
+ }
+}
+</script>
+
 </head>
+
 <body>
 
 <header class="header">
-  <div class="container nav">
+<div class="container nav">
+
 <a href="index.html" class="logo">
-  Mukesh<span>Tandi</span>
+Mukesh<span>Tandi</span>
 </a>
 
-    <!-- Hamburger -->
-    <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<div class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
-    <nav id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Expertise</a>
-      <a href="projects.html">Work</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
-  </div>
+<nav id="mobileNav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Expertise</a>
+<a href="projects.html">Work</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html" class="btn">Contact</a>
+</nav>
+
+</div>
 </header>
 
 <section class="section">
-  <div class="container">
-    <h1 class="section-title">Blog</h1>
-    <p>Insights on performance engineering, web architecture and monetization.</p>
 
-    <div class="service-grid">
+<div class="container">
 
-      <div class="service-card">
-        <h4>How to Handle Viral Traffic</h4>
-        <p>Architecting systems that survive sudden traffic spikes.</p>
-      </div>
+<h1 class="section-title">Mukesh Tandi Blog</h1>
 
-      <div class="service-card">
-        <h4>Optimizing PHP for Speed</h4>
-        <p>OPcache, memory tuning and real-world performance tips.</p>
-      </div>
+<h2>Web Development & Performance Engineering Articles</h2>
 
-      <div class="service-card">
-        <h4>AdSense Without Killing UX</h4>
-        <p>Balancing monetization and performance.</p>
-      </div>
+<p>
+Welcome to the Mukesh Tandi website blog where I share insights about web development, server optimization and scalable website architecture.
+</p>
 
-    </div>
-  </div>
+<div class="service-grid">
+
+<div class="service-card">
+
+<h3>How to Handle Viral Traffic</h3>
+
+<p>
+Learn how Mukesh Tandi designs high-traffic architectures capable of surviving sudden viral spikes.
+</p>
+
+<a href="#">Read Article</a>
+
+</div>
+
+<div class="service-card">
+
+<h3>Optimizing PHP for Speed</h3>
+
+<p>
+Techniques for improving PHP performance including OPcache configuration and server tuning.
+</p>
+
+<a href="#">Read Article</a>
+
+</div>
+
+<div class="service-card">
+
+<h3>AdSense Without Killing UX</h3>
+
+<p>
+Strategies to monetize websites while maintaining user experience and performance.
+</p>
+
+<a href="#">Read Article</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+<footer class="footer">
+
+<p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
+
+</footer>
+
 <script>
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
 const menuToggle = document.getElementById("menuToggle");
 const mobileNav = document.getElementById("mobileNav");
 
 menuToggle.addEventListener("click", () => {
-  mobileNav.classList.toggle("show");
+mobileNav.classList.toggle("show");
 });
+
 </script>
 
-<footer class="footer">
-  <p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
-</footer>
-
-<script>
-document.getElementById("year").textContent=new Date().getFullYear();
-</script>
 </body>
 </html>
