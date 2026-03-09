@@ -1,92 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Projects & Work | Mukesh Tandi</title>
+<title>Mukesh Tandi Projects | Mukesh Tandi Website Portfolio</title>
 
-<meta name="description" content="Projects and case studies by Mukesh Tandi – high-performance websites, server-optimized systems and scalable web platforms.">
+<meta name="description" content="Mukesh Tandi projects and portfolio. Explore high performance websites, scalable web platforms and optimized server systems built by Mukesh Tandi.">
+
+<meta name="keywords" content="Mukesh Tandi, Mukesh Tandi website, Mukesh Tandi projects, Mukesh Tandi portfolio, Mukesh Tandi Pundlota">
+
 <meta name="author" content="Mukesh Tandi">
 
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mukeshtandi.com/projects.html">
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="Mukesh Tandi Projects">
+<meta property="og:description" content="Portfolio projects by Mukesh Tandi including high performance websites and scalable web systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mukeshtandi.com/projects.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/mukeshtandi/mukeshtandi.com/mukesh_tandi.webp">
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mukesh Tandi Projects">
+<meta name="twitter:description" content="Mukesh Tandi website portfolio and development work.">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/mukeshtandi/mukeshtandi.com/mukesh_tandi.webp">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<!-- PERSON SCHEMA -->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Mukesh Tandi",
+ "url": "https://mukeshtandi.com",
+ "jobTitle": "Web Developer",
+ "address": {
+ "@type": "PostalAddress",
+ "addressLocality": "Pundlota",
+ "addressCountry": "India"
+ }
+}
+</script>
+
 </head>
+
 <body>
 
 <header class="header">
-  <div class="container nav">
+<div class="container nav">
+
 <a href="index.html" class="logo">
-  Mukesh<span>Tandi</span>
+Mukesh<span>Tandi</span>
 </a>
 
-    <!-- Hamburger -->
-    <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<div class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
-    <nav id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Expertise</a>
-      <a href="projects.html">Work</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html" class="btn">Contact</a>
-    </nav>
-  </div>
+<nav id="mobileNav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Expertise</a>
+<a href="projects.html">Projects</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html" class="btn">Contact</a>
+</nav>
+
+</div>
 </header>
 
 <section class="section">
-  <div class="container">
-    <h1 class="section-title">Projects & Case Studies</h1>
-    <p>Selected work focused on performance, scalability and real-world traffic handling.</p>
 
-    <div class="service-grid">
+<div class="container">
 
-      <div class="service-card">
-        <h4>High-Traffic Content Platform</h4>
-        <p>
-          Engineered for viral traffic with aggressive caching, low TTFB
-          and stable uptime under peak load.
-        </p>
-      </div>
+<h1 class="section-title">Mukesh Tandi Projects</h1>
 
-      <div class="service-card">
-        <h4>Monetization-Focused Website</h4>
-        <p>
-          AdSense & AdX optimized layout with policy-safe ad placement
-          and performance-driven revenue strategy.
-        </p>
-      </div>
+<h2>Mukesh Tandi Website Portfolio</h2>
 
-      <div class="service-card">
-        <h4>Server-Optimized Web System</h4>
-        <p>
-          Linux + LiteSpeed tuned infrastructure with PHP optimization
-          and database efficiency improvements.
-        </p>
-      </div>
+<p>
+Explore selected projects built by Mukesh Tandi including high performance websites, scalable platforms and optimized server architectures designed for real-world traffic.
+</p>
 
-    </div>
-  </div>
+<div class="service-grid">
+
+<div class="service-card">
+
+<h3>High-Traffic Content Platform</h3>
+
+<p>
+A content platform engineered by Mukesh Tandi to handle viral traffic using aggressive caching, optimized server configuration and minimal response time.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Monetization-Focused Website</h3>
+
+<p>
+A revenue optimized website built by Mukesh Tandi using AdSense and AdX compliant layouts focused on sustainable monetization.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Server Optimized Web System</h3>
+
+<p>
+Linux and LiteSpeed based infrastructure tuned by Mukesh Tandi for maximum performance and database efficiency.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-<script>
-const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
-
-menuToggle.addEventListener("click", () => {
-  mobileNav.classList.toggle("show");
-});
-</script>
 
 <footer class="footer">
-  <p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
+
+<p>© <span id="year"></span> Mukesh Tandi. All Rights Reserved.</p>
+
 </footer>
 
 <script>
+
 document.getElementById("year").textContent=new Date().getFullYear();
+
+const menuToggle=document.getElementById("menuToggle");
+const mobileNav=document.getElementById("mobileNav");
+
+menuToggle.addEventListener("click",()=>mobileNav.classList.toggle("show"));
+
 </script>
+
 </body>
 </html>
